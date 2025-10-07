@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scale Without Burnout | Executive Performance Coaching</title>
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background-color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #001F3F;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 40px;
+      opacity: 0.95;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-button {
+      background-color: #FF7A00;
+      color: white;
+      padding: 18px 40px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 15px rgba(255, 122, 0, 0.3);
+    }
+
+    .cta-button:hover {
+      background-color: #E66C00;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(255, 122, 0, 0.4);
+    }
+
+    /* Section General */
+    .section {
+      padding: 80px 20px;
+      background-color: white;
+    }
+
+    .section-alt {
+      background-color: #F8F9FB;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      text-align: center;
+      color: #001F3F;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .testimonial-card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial-card p {
+      font-style: italic;
+      margin-bottom: 20px;
+      color: #4a5568;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      color: #FF7A00;
+    }
+
+    .result {
+      font-weight: 700;
+      color: #2d3748;
+      margin-top: 10px;
+    }
+
+    /* Process Section */
+    .process {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-top: 50px;
+    }
+
+    .process-step {
+      text-align: center;
+    }
+
+    .step-number {
+      background: #FF7A00;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 auto 20px;
+      box-shadow: 0 5px 12px rgba(255, 122, 0, 0.3);
+    }
+
+    .process-step h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: #001F3F;
+    }
+
+    .process-step p {
+      color: #4a5568;
+    }
+
+    /* FAQ Section */
+    .faq {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: white;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .faq-item h3 {
+      color: #FF7A00;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .faq-item p {
+      color: #4a5568;
+    }
+
+    /* Final CTA */
+    .final-cta {
+      background-color: #001F3F;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      animation: fadeIn 1.8s ease forwards;
+    }
+
+    .final-cta h2 {
+      color: white;
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+    }
+
+    .final-cta p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1.1rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Scale to 7-Figures Without Sacrificing Your Health, Relationships, or Sanity</h1>
+      <p>High-performance coaching for founders who refuse to choose between success and wellbeing.</p>
+      <a href="https://calendly.com/faithtaiwa/free-flow-assessment-call" target="_blank" class="cta-button">Book Your Strategy Call</a>
+    </div>
+  </section>
+
+  <!-- Social Proof Section -->
+  <section class="section">
+    <div class="container">
+      <h2>What Clients Are Saying</h2>
+      <div class="testimonials">
+        <div class="testimonial-card">
+          <p>"I was working 80-hour weeks and heading toward a breakdown. Within 3 months, I cut my hours by 40% while revenue increased 65%."</p>
+          <div class="testimonial-author">Sarah Chen, SaaS Founder</div>
+          <div class="result">Result: $2.3M ARR, 35 hrs/week</div>
+        </div>
+        <div class="testimonial-card">
+          <p>"The systems we implemented freed up 15 hours per week. I finally have time for my family again without the guilt."</p>
+          <div class="testimonial-author">Marcus Rodriguez, E-commerce CEO</div>
+          <div class="result">Result: 3x team efficiency, work-life balance restored</div>
+        </div>
+        <div class="testimonial-card">
+          <p>"I learned to lead without being in every decision. My team is more autonomous, and I'm no longer the bottleneck."</p>
+          <div class="testimonial-author">Jennifer Park, Agency Owner</div>
+          <div class="result">Result: $850K to $1.9M in 14 months</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="process">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3>Diagnose</h3>
+          <p>We identify your specific burnout triggers, bottlenecks, and energy leaks through a comprehensive assessment.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3>Design</h3>
+          <p>Build a custom operating system that leverages your strengths while delegating, automating, or eliminating the rest.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3>Deploy</h3>
+          <p>Implement sustainable routines, team structures, and boundaries that protect your energy while driving results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <h2>Common Questions</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <h3>How is this different from regular business coaching?</h3>
+          <p>Most coaches focus only on revenue. We optimize for sustainable performance—meaning you hit your financial goals while maintaining your health, relationships, and mental clarity.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What if I don't have time for coaching right now?</h3>
+          <p>That's exactly why you need this. We work with founders who feel like they don't have an extra minute to spare. Our methods create time by eliminating inefficiencies and poor leverage points in your schedule.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How long does it take to see results?</h3>
+          <p>Most clients report feeling less overwhelmed within 2–3 weeks. Measurable outcomes (revenue, team performance, time savings) typically show up within 60–90 days.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What's the investment?</h3>
+          <p>Programs start at $3,500/month for 1:1 coaching. We'll discuss pricing and fit on your strategy call based on your specific goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta" id="calendar">
+    <div class="container">
+      <h2>Ready to Scale Without the Burnout?</h2>
+      <p>Book a free 30-minute strategy call. We'll map out your biggest leverage points and see if we're a fit.</p>
+      <a href="https://calendly.com/faithtaiwa/free-flow-assessment-call" target="_blank" class="cta-button">Book Your Free Flow Assessment Call</a>
+    </div>
+  </section>
+</body>
+</html>
